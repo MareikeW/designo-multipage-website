@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
-import DesignPageHero from "../components/DesignPageHero";
-import ProjectCaseCard from "../components/ProjectCaseCard";
-import DesignCard from "../components/DesignCard";
-import GetInTouchComponent from "../components/GetInTouchComponent";
+import Header from "../components/Header-Footer/Header";
+import DesignPageHero from "../components/Hero-Components/DesignPageHero";
+import ProjectCaseCard from "../components/Projects/ProjectCaseCard";
+import DesignCard from "../components/DesignCard/DesignCard";
+import GetInTouchComponent from "../components/GetInTouch-Component/GetInTouchComponent";
 import Footer from "../components/Footer";
 
 const GraphicDesign = () => {

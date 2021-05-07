@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
-import HeroHome from "../components/HeroHome";
-import DesignCard from "../components/DesignCard";
-import CharacteristicCard from "../components/CharacteristicCard";
-import GetInTouchComponent from "../components/GetInTouchComponent";
+import Header from "../components/Header-Footer/Header";
+import HeroHome from "../components/Hero-Components/HeroHome";
+import DesignCard from "../components/DesignCard/DesignCard";
+import CharacteristicCard from "../components/CharacteristicCard/CharacteristicCard";
+import GetInTouchComponent from "../components/GetInTouch-Component/GetInTouchComponent";
 import Footer from "../components/Footer";
 
 const Home = () => {
