@@ -21,8 +21,8 @@ const WebDesign = () => {
             <ProjectCaseCard title="Blogr" description="Blogr is a platform for creating an online blog or publication" />
             <ProjectCaseCard title="Camp" description="Get expert training in coding, data, design, and digital marketing" />
 
-            <DesignCard title="App Design" />
-            <DesignCard title="Graphic Design" />
+            <DesignCard title="App Design" linkPath="/appdesign" />
+            <DesignCard title="Graphic Design" linkPath="/graphicdesign" />
 
             <GetInTouchComponent />
             <Footer />

@@ -17,8 +17,8 @@ const GraphicDesign = () => {
             <ProjectCaseCard title="Boxed water" description="A simple packaging concept made for Boxed Water" />
             <ProjectCaseCard title="Science!" description="A poster made in collaboration with the Federal Art Project" />
 
-            <DesignCard title="App Design" />
-            <DesignCard title="Web Design" />
+            <DesignCard title="App Design" linkPath="/appdesign" />
+            <DesignCard title="Web Design" linkPath="/webdesign" />
 
             <GetInTouchComponent />
             <Footer />

@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const DesignCard = ({title}) => {
+const DesignCard = ({title, linkPath}) => {
     return (
         <div>
             <h3>{title}</h3>
-            <button>View Project</button>
+            <Link to={linkPath}><button>View Project</button></Link>
         </div>
     )
 }

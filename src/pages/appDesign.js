@@ -19,8 +19,8 @@ const AppDesign = () => {
             <ProjectCaseCard title="Todo" description="A todo app that features cloud sync with light and dark mode" />
             <ProjectCaseCard title="Loopstudios" description="A VR experience app made for Loopstudios" />
 
-            <DesignCard title="Web Design" />
-            <DesignCard title="Graphic Design" />
+            <DesignCard title="Web Design" linkPath="/webdesign" />
+            <DesignCard title="Graphic Design" linkPath="/graphicdesign" />
 
             <GetInTouchComponent />
             <Footer />
