@@ -33,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
 
     button {
         text-transform: uppercase;
+        cursor: pointer;
     }
 
     a {
