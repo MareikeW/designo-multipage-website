@@ -4,7 +4,7 @@ import HeroHome from "../components/Hero-Components/HeroHome";
 import DesignCard from "../components/DesignCard/DesignCard";
 import CharacteristicCard from "../components/CharacteristicCard/CharacteristicCard";
 import GetInTouchComponent from "../components/GetInTouch-Component/GetInTouchComponent";
-import Footer from "../components/Footer";
+import Footer from "../components/Header-Footer/Footer";
 
 const Home = () => {
     return (

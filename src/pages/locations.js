@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header-Footer/Header";
 import GetInTouchComponent from "../components/GetInTouch-Component/GetInTouchComponent";
-import Footer from "../components/Footer";
+import Footer from "../components/Header-Footer/Footer";
 import Map from "../components/Locations/Map";
 import LocationInformationCard from "../components/Locations/LocationInformationCard";
 

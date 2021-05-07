@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 48px;
         line-height: 48px;
         font-weight: 500;
+        color: #FFFFFF;
     }
 
     h2 {
@@ -34,6 +35,11 @@ const GlobalStyle = createGlobalStyle`
     button {
         text-transform: uppercase;
         cursor: pointer;
+        font-family: 'Jost', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21.68px;
+        letter-spacing: 1px;
     }
 
     a {

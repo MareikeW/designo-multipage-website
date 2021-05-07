@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "./Header-Footer/Navigation";
+import Navigation from "./Navigation";
 
 const Footer = () => {
     return (

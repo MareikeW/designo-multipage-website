@@ -2,9 +2,9 @@ import React from "react";
 import Header from "../components/Header-Footer/Header";
 import HeroAbout from "../components/Hero-Components/HeroAbout";
 import AboutDescriptionCard from "../components/AboutDescriptions/AboutDescriptionCard";
-import LocationCards from "../components/LocationCards";
+import LocationCards from "../components/LocationCards/LocationCards";
 import GetInTouchComponent from "../components/GetInTouch-Component/GetInTouchComponent";
-import Footer from "../components/Footer";
+import Footer from "../components/Header-Footer/Footer";
 
 
 const About = () => {

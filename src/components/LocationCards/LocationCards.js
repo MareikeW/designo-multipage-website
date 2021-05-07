@@ -1,5 +1,5 @@
 import React from "react";
-import LocationCard from "./LocationCards/LocationCard";
+import LocationCard from "./LocationCard";
 
 const LocationCards = () => {
     return (

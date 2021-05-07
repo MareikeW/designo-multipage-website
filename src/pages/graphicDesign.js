@@ -4,7 +4,7 @@ import DesignPageHero from "../components/Hero-Components/DesignPageHero";
 import ProjectCaseCard from "../components/Projects/ProjectCaseCard";
 import DesignCard from "../components/DesignCard/DesignCard";
 import GetInTouchComponent from "../components/GetInTouch-Component/GetInTouchComponent";
-import Footer from "../components/Footer";
+import Footer from "../components/Header-Footer/Footer";
 
 const GraphicDesign = () => {
     return (
