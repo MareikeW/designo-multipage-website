@@ -4,15 +4,15 @@ import { ReactComponent as ResourcefulIllustration } from "../../assets/home/des
 import { ReactComponent as FriendlyIllustration } from "../../assets/home/desktop/illustration-friendly.svg";
 import { StyledCharacteristicCard } from "./characteristicCard-styles";
 
-const CharacteristicCard = ({ characteristic, description, svgName }) => {
+const CharacteristicCard = ({ characteristic, description }) => {
     let illustration;
 
     // conditional rendering
-    if (svgName === "passionate") 
+    if (characteristic === "Passionate") 
         illustration = <PassionateIllustration />
-    else if (svgName === "resourceful") 
+    else if (characteristic === "Resourceful") 
         illustration = <ResourcefulIllustration />
-    else if (svgName === "friendly") 
+    else if (characteristic === "Friendly") 
         illustration = <FriendlyIllustration />
 
     return (

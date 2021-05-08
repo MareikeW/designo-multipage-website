@@ -53,3 +53,25 @@ export const StyledHeroPhoneImage = styled.div`
         transform:translate(-50%, -50%);
     }
 `
+
+export const StyledDesignPageHero = styled.div`
+    background-color: #E7816B;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.56em;
+    }
+`

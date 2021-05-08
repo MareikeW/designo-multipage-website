@@ -17,7 +17,7 @@ const WebDesign = () => {
                 and bring memorable brand experiences." 
             />
 
-            <ProjectCaseCard 
+            <ProjectCaseCard
                 title="Express" 
                 description="A multi-carrier shipping website for ecommerce businesses" 
             />
@@ -37,7 +37,7 @@ const WebDesign = () => {
                 title="Blogr" 
                 description="Blogr is a platform for creating an online blog or publication" 
             />
-            <ProjectCaseCard 
+            <ProjectCaseCard
                 title="Camp" 
                 description="Get expert training in coding, data, design, and digital marketing" 
             />

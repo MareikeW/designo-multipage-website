@@ -1,11 +1,12 @@
 import React from "react";
+import { StyledDesignPageHero } from "./hero-styles";
 
 const DesignPageHero = ({title, subtitle}) => {
     return (
-        <div>
+        <StyledDesignPageHero>
             <h1>{title}</h1>
             <p>{subtitle}</p>
-        </div>
+        </StyledDesignPageHero>
     )
 }
 
