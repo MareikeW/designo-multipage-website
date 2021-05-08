@@ -6,7 +6,6 @@ import LocationCards from "../components/LocationCards/LocationCards";
 import GetInTouchComponent from "../components/GetInTouch-Component/GetInTouchComponent";
 import Footer from "../components/Header-Footer/Footer";
 
-
 const About = () => {
     return (
         <div>
@@ -15,7 +14,6 @@ const About = () => {
             <HeroAbout />
 
             <AboutDescriptionCard 
-                imageSource="../assets/about/mobile/image-world-class-talent.jpg"
                 imageAlt="Woman looking at a wall with photos."
                 title="World-class talent"
                 description="We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
@@ -31,7 +29,6 @@ const About = () => {
             <LocationCards />
 
             <AboutDescriptionCard
-                imageSource="../assets/about/mobile/image-real-deal.jpg"
                 imageAlt="Photos are glued on a white wall."
                 title="The real deal"
                 description="As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.

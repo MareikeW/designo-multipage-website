@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+/* HOMEPAGE */
 export const StyledHeroHome = styled.div`
     background-color: #E7816B;
     text-align: center;
@@ -22,6 +23,7 @@ export const StyledHeroTextContainer = styled.div`
     margin: 0 auto;
     margin-top: 75px;
     padding: 0 1em;
+    z-index: 10;
 
     h1 {
         font-size: 2rem;
@@ -32,20 +34,21 @@ export const StyledHeroTextContainer = styled.div`
         font-size: 1rem;
         line-height: 1.6rem;
     }
-`
 
-export const StyledHeroButton = styled.button`
-    background-color: #FFFFFF;
-    border-radius: 0.5rem;
-    border: none;
-    padding: 1.08rem 1.5rem;
-    color: #333136;
+    button {
+        background-color: #FFFFFF;
+        border-radius: 0.5rem;
+        border: none;
+        padding: 1.08rem 1.5rem;
+        color: #333136;
+        cursor: pointer;
+    }
 `
 
 export const StyledHeroPhoneImage = styled.div`
     margin-top: -5rem;
-    
-    
+    z-index: 0;
+        
     img {
         position: relative;
         top: 50%;
@@ -54,6 +57,7 @@ export const StyledHeroPhoneImage = styled.div`
     }
 `
 
+/* DESIGN PAGES FOR WEB, APP, AND GRAPHIC */
 export const StyledDesignPageHero = styled.div`
     background-color: #E7816B;
     text-align: center;
@@ -73,5 +77,25 @@ export const StyledDesignPageHero = styled.div`
     p {
         font-size: 1rem;
         line-height: 1.56em;
+    }
+`
+
+/* ABOUT PAGE */
+export const StyledHeroAbout = styled.div`
+    background-color:  #E7816B;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 375px;
+    margin: 0 auto;
+    
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 2em;
+    }
+
+    p {
+        padding: 0 1em;
+        padding-bottom: 4.65em;
     }
 `
