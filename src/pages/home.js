@@ -14,11 +14,11 @@ const Home = () => {
             <HeroHome />
 
             <div>
-                <DesignCard title="Web Design" linkPath="/webdesign" />
+                <DesignCard title="Web Design" linkPath="/webdesign" background="webdesign" />
 
-                <DesignCard title="App Design" linkPath="/appdesign" />
+                <DesignCard title="App Design" linkPath="/appdesign" background="appdesign" />
 
-                <DesignCard title="Graphic Design" linkPath="/graphicdesign" />
+                <DesignCard title="Graphic Design" linkPath="/graphicdesign" background="graphicdesign" />
             </div>
   
             <div>
