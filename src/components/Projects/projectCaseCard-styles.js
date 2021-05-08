@@ -20,7 +20,7 @@ import boxedWater from "../../assets/graphic-design/desktop/image-boxed-water.jp
 import science from "../../assets/graphic-design/desktop/image-science.jpg";
 
 export const StyledProjectCaseCard = styled.div`
-    margin: 2em;
+    margin: 2em 1em;
     text-align: center;
     border-radius: 1em;
     background-color: #FDF3F0;

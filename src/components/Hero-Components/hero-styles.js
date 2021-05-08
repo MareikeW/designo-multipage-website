@@ -97,5 +97,11 @@ export const StyledHeroAbout = styled.div`
     p {
         padding: 0 1em;
         padding-bottom: 4.65em;
+        margin-bottom: 0;
+    }
+
+    img {
+        max-height: 320px; 
+        width: 100%;
     }
 `
