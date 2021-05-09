@@ -1,12 +1,9 @@
 import React from "react";
-import Navigation from "./Navigation";
 
 const Footer = () => {
     return (
         <footer>
-                <div>
-                    <Navigation />
-                </div>
+                
 
                 <div>
                     <p><strong>Designo Central Office</strong>

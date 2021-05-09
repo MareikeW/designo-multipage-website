@@ -38,7 +38,7 @@ const App = () => {
             <About />
           </Route>
 
-          <Route path="/location">
+          <Route path="/locations">
             <Location />
           </Route>
 

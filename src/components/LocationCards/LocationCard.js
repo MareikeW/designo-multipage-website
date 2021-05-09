@@ -4,6 +4,7 @@ import { ReactComponent as AustraliaIllustration } from "../../assets/shared/des
 import { ReactComponent as CanadaIllustration } from "../../assets/shared/desktop/illustration-canada.svg";
 import { ReactComponent as UKIllustration } from "../../assets/shared/desktop/illustration-united-kingdom.svg";
 import { StyledLocationCard } from "./LocationCard-styles";
+import { ReactComponent as Circle } from "../../assets/shared/desktop/bg-pattern-small-circle.svg"
 
 const LocationCard = ({title}) => {
     let illustrationSource;
@@ -17,9 +18,10 @@ const LocationCard = ({title}) => {
 
     return (
         <StyledLocationCard>
+            <svg className="circle"><Circle /></svg>
             {illustrationSource}
             <h3>{title}</h3>
-            <Link to="/location"><button>See Location</button></Link>
+            <Link to="/locations"><button>See Location</button></Link>
            
         </StyledLocationCard>
     )

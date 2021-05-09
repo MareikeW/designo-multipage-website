@@ -22,7 +22,7 @@ export const StyledAboutDescriptionCard = styled.div`
     }
     
     img {
-        max-height: 320px;
-        width: 100%;
+        max-height: 320px; 
+        max-width: 100%;
     }
 `

@@ -1,9 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 /* font-family Jost 400 Regular und 500 Medium */
 const GlobalStyle = createGlobalStyle`
-    body {
+    * {
         margin: 0;
         padding: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    
+    body {
         line-height: 26px;
         font-weight: 400;
         font-family: 'Jost', sans-serif;
@@ -32,7 +38,8 @@ const GlobalStyle = createGlobalStyle`
         text-transform: uppercase;
     }
 
-    button {
+    button,
+    input[type=submit] {
         text-transform: uppercase;
         cursor: pointer;
         font-family: 'Jost', sans-serif;
@@ -42,8 +49,8 @@ const GlobalStyle = createGlobalStyle`
         letter-spacing: 1px;
     }
 
-    a {
-        text-decoration: none;
+    input {
+        font-family: 'Jost', sans-serif;
     }
 `;
 

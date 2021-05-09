@@ -85,7 +85,6 @@ export const StyledHeroAbout = styled.div`
     background-color:  #E7816B;
     text-align: center;
     color: #FFFFFF;
-    max-width: 375px;
     margin: 0 auto;
     
 
@@ -102,6 +101,6 @@ export const StyledHeroAbout = styled.div`
 
     img {
         max-height: 320px; 
-        width: 100%;
+        max-width: 100%;
     }
 `

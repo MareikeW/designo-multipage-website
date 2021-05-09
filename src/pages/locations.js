@@ -2,14 +2,14 @@ import React from "react";
 import Header from "../components/Header-Footer/Header";
 import GetInTouchComponent from "../components/GetInTouch-Component/GetInTouchComponent";
 import Footer from "../components/Header-Footer/Footer";
-import Map from "../components/Locations/Map";
+import MapComponent from "../components/Locations/Map";
 import LocationInformationCard from "../components/Locations/LocationInformationCard";
 
 const Locations = () => {
     return (
         <div>
             <Header />
-            <Map 
+            <MapComponent 
                 imageSource="../assets/locations/tablet/image-map-canada.png" 
                 imageAlt="Map of Toronto."
             />
@@ -23,7 +23,7 @@ const Locations = () => {
                 email="contact@designo.co"
             />
 
-            <Map 
+            <MapComponent 
                 imageSource="../assets/locations/tablet/image-map-australia.png" 
                 imageAlt="Map of New South Wales."
             />
@@ -37,7 +37,7 @@ const Locations = () => {
                 email="contact@designo.au"
             />
 
-            <Map 
+            <MapComponent 
                 imageSource="../assets/locations/tablet/image-map-uk.png" 
                 imageAlt="Map of Rhyd-y-fro."
             />

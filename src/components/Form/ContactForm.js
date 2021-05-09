@@ -1,8 +1,8 @@
 import React from "react";
-
+import { StyledContactForm, FormInputFields } from "./contact-form-styles";
 const ContactForm = () => {
     return (
-        <div>
+        <StyledContactForm>
             <div>
                 <h1>Contact Us</h1>
                 <p>Ready to take it to the next level? Let’s talk about your project or idea and find out how 
@@ -11,13 +11,15 @@ const ContactForm = () => {
             </div>
             
             <form>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email Address" />
-                <input type="tel" placeholder="Phone" />
-                <textarea />
+                <FormInputFields>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email Address" />
+                    <input type="tel" placeholder="Phone" />
+                    <textarea placeholder="Your Message"/>
+                </FormInputFields>
                 <input type="submit" value="Submit" />
             </form>
-        </div>
+        </StyledContactForm>
     )
 }
 

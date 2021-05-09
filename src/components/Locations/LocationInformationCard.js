@@ -1,8 +1,9 @@
 import React from "react";
+import { StyledLocationInfoCard } from "./location-styles";
 
 const LocationInformationCard = ({country, officeName, street, city, postCode, phone, email}) => {
     return (
-        <div>
+        <StyledLocationInfoCard>
             <h2>{country}</h2>
             <div>
                 <p><strong>Designo {officeName}</strong></p>
@@ -15,7 +16,7 @@ const LocationInformationCard = ({country, officeName, street, city, postCode, p
                 <p>P: {phone}</p>
                 <p>M: {email}</p>
             </div>
-        </div>
+        </StyledLocationInfoCard>
     )
 }
 
