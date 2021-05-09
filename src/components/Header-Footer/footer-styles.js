@@ -5,11 +5,17 @@ export const StyledFooter = styled.footer`
     text-align: center;
     display: flex;
     flex-direction: column;
+    /* Footer in /contact is different */
+    padding-top: ${({contactpage}) => {
+        if (contactpage) return "4em";
+        else return "23em"
+    }}
 `
 
 export const StyledLogo = styled.div`
     img {
         width: 202px;
+        
     }
 `
 export const HorizontalLine = styled.div`
@@ -31,6 +37,7 @@ export const StyledNavigation = styled.nav`
 
 export const StyledContactInformation = styled.div`
     color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
 
     div:first-of-type {
         margin-top: 1em;
@@ -38,6 +45,19 @@ export const StyledContactInformation = styled.div`
 
     div:nth-of-type(2) {
         margin-top: 2.5em;
+    }
+
+    div:last-of-type {
+        margin: 2.5em 0;
+
+        * {
+            margin: 0.5em;
+        }
+
+        *:hover,
+        *:focus {
+            cursor: pointer;
+        }
     }
 
 `

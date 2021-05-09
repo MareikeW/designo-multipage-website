@@ -18,7 +18,9 @@ const Header = () => {
     return (
         <StyledHeader>
             <StyledLogo>
-                <img src={logo} alt="Logo Designo" />
+                <Link to="/">
+                    <img src={logo} alt="Logo Designo" />
+                </Link>
             </StyledLogo>
             <nav>
                 <input type="checkbox" name="isMenuOpen" id="check" checked={isChecked} onChange={handleChange} />
@@ -26,9 +28,15 @@ const Header = () => {
                     {menuIcon} 
                 </label>
                 <ul>
-                    <Link to="/about"><li>Our Company</li></Link>
-                    <Link to="/locations"><li>Locations</li></Link>
-                    <Link to="/contact"><li>Contact</li></Link>
+                    <Link to="/about">
+                        <li>Our Company</li>
+                    </Link>
+                    <Link to="/locations">
+                        <li>Locations</li>
+                    </Link>
+                    <Link to="/contact">
+                        <li>Contact</li>
+                    </Link>
                 </ul>
             </nav>
         </StyledHeader>

@@ -13,7 +13,7 @@ const Contact = () => {
 
             <LocationCards />
 
-            <Footer />
+            <Footer contactpage="true" />
         </div>
     )
 }

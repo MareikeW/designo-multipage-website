@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
+export const ContainerPosition = styled.div`
+    position: relative;
+    height: 200px;
+`
+
 export const StyledGetInTouchContainer = styled.div`
     margin: 1em;
     background-color: #E7816B;
     border-radius: 0.5rem;
     color: #FFFFFF;
     text-align: center;
-    padding: 2em 1em;
+    padding: 4em 1em;
+    position: absolute;
+    top: 20px;
 
     h2 {
         font-size: 2rem;
@@ -17,6 +24,8 @@ export const StyledGetInTouchContainer = styled.div`
     p {
         font-size: 1rem;
         line-height: 1.5rem;
+        margin-top: 1em;
+        margin-bottom: 2em;
     }
 
     button {
