@@ -3,6 +3,7 @@ import { ReactComponent as PassionateIllustration } from "../../assets/home/desk
 import { ReactComponent as ResourcefulIllustration } from "../../assets/home/desktop/illustration-resourceful.svg";
 import { ReactComponent as FriendlyIllustration } from "../../assets/home/desktop/illustration-friendly.svg";
 import { StyledCharacteristicCard } from "./characteristicCard-styles";
+import { ReactComponent as Circle } from "../../assets/shared/desktop/bg-pattern-small-circle.svg";
 
 const CharacteristicCard = ({ characteristic, description }) => {
     let illustration;
@@ -17,6 +18,7 @@ const CharacteristicCard = ({ characteristic, description }) => {
 
     return (
         <StyledCharacteristicCard>
+            <Circle className="circle" />
             {illustration}
             <h3>{characteristic}</h3>
             <p>{description}</p>

@@ -32,6 +32,7 @@ export const StyledDesignCardContainer = styled.div`
     }
 
     button {
+        margin-top: 1em;
         background: none;
         border: none;
         color: #FFFFFF;

@@ -33,6 +33,7 @@ export const StyledHeroTextContainer = styled.div`
     p {
         font-size: 1rem;
         line-height: 1.6rem;
+        margin: 1em;
     }
 
     button {
@@ -42,6 +43,7 @@ export const StyledHeroTextContainer = styled.div`
         padding: 1.08rem 1.5rem;
         color: #333136;
         cursor: pointer;
+        margin: 1em;
     }
 `
 
