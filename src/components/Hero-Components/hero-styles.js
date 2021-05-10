@@ -10,7 +10,12 @@ export const StyledHeroHome = styled.div`
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    margin-bottom: 7em;
+    margin: 0 auto 7em auto;
+    max-width: 625px;
+
+    @media (min-width: 625px) {
+        border-radius: 1rem;
+    }
 `
 
 export const StyledHeroBackgroundCircle = styled.div`

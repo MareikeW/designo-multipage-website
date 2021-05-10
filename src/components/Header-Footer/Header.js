@@ -24,7 +24,7 @@ const Header = () => {
             </StyledLogo>
             <nav>
                 <input type="checkbox" name="isMenuOpen" id="check" checked={isChecked} onChange={handleChange} />
-                <label for="check" class="checkButton">
+                <label htmlFor="check" className="checkButton">
                     {menuIcon} 
                 </label>
                 <ul>
