@@ -32,10 +32,12 @@ const GraphicDesign = () => {
             <DesignCard 
                 title="App Design" 
                 linkPath="/appdesign" 
+                background="appdesign"
             />
             <DesignCard 
                 title="Web Design" 
                 linkPath="/webdesign" 
+                background="webdesign"
             />
 
             <GetInTouchComponent />

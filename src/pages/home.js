@@ -17,17 +17,20 @@ const Home = () => {
                 <DesignCard 
                     title="Web Design" 
                     linkPath="/webdesign" 
-                    background="webdesign" />
+                    background="webdesign" 
+                />
 
                 <DesignCard 
                     title="App Design" 
                     linkPath="/appdesign" 
-                    background="appdesign" />
+                    background="appdesign" 
+                />
 
                 <DesignCard 
                     title="Graphic Design" 
                     linkPath="/graphicdesign" 
-                    background="graphicdesign" />
+                    background="graphicdesign" 
+                />
             </div>
   
             <div>

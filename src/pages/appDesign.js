@@ -39,11 +39,13 @@ const AppDesign = () => {
 
             <DesignCard 
                 title="Web Design" 
-                linkPath="/webdesign" 
+                linkPath="/webdesign"
+                background="webdesign" 
             />
             <DesignCard 
                 title="Graphic Design" 
-                linkPath="/graphicdesign" 
+                linkPath="/graphicdesign"
+                background="graphicdesign" 
             />
 
             <GetInTouchComponent />
