@@ -43,4 +43,20 @@ export const StyledGetInTouchContainer = styled.div`
         background-color: #FFAD9B;
         color: #FFFFFF;
     }
+
+    @media (min-width: 700px) {
+        width: 690px;
+        padding: 3.56em 1.5em;
+
+        h2 {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        p {
+            line-height: 1.63rem;
+            margin-top: 3.5em;
+            padding: 0 3em;
+        }
+    }
 `

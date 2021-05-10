@@ -1,7 +1,12 @@
 import styled from "styled-components";
+/* Mobile Images */
 import webDesignBackground from "../../assets/home/mobile/image-web-design.jpg";
 import appDesignBackground from "../../assets/home/mobile/image-app-design.jpg";
 import graphicDesignBackground from "../../assets/home/mobile/image-graphic-design.jpg";
+/* Tablet Images */
+import webDesignTablet from "../../assets/home/tablet/image-web-design.jpg";
+import appDesignTablet from "../../assets/home/tablet/image-app-design.jpg";
+import graphicDesignTablet from "../../assets/home/tablet/image-graphic-design.jpg";
 
 export const StyledContainer = styled.div`
     position: relative;
@@ -27,6 +32,14 @@ export const StyledDesignCardContainer = styled.div`
     filter: brightness(50%);
     z-index: 5;
     position: absolute;
+
+    @media (min-width: 600px) {
+        background-image: ${({background}) => {
+            if (background === "webdesign") return `url(${webDesignTablet})`;
+            else if (background === "appdesign") return `url(${appDesignTablet})`;
+            else if (background === "graphicdesign") return `url(${graphicDesignTablet})`;
+        }};
+    }
 `
 
 export const StyledText = styled.div`

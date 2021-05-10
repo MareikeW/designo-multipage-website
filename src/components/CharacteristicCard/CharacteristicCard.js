@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as PassionateIllustration } from "../../assets/home/desktop/illustration-passionate.svg";
 import { ReactComponent as ResourcefulIllustration } from "../../assets/home/desktop/illustration-resourceful.svg";
 import { ReactComponent as FriendlyIllustration } from "../../assets/home/desktop/illustration-friendly.svg";
-import { StyledCharacteristicCard } from "./characteristicCard-styles";
+import { StyledCharacteristicCard, StyledTextContainer } from "./characteristicCard-styles";
 import { ReactComponent as Circle } from "../../assets/shared/desktop/bg-pattern-small-circle.svg";
 
 const CharacteristicCard = ({ characteristic, description }) => {
@@ -20,8 +20,10 @@ const CharacteristicCard = ({ characteristic, description }) => {
         <StyledCharacteristicCard>
             <Circle className="circle" />
             {illustration}
-            <h3>{characteristic}</h3>
-            <p>{description}</p>
+            <StyledTextContainer>
+                <h3>{characteristic}</h3>
+                <p>{description}</p>
+            </StyledTextContainer>
         </StyledCharacteristicCard>
     )
 }
