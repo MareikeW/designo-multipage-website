@@ -35,6 +35,11 @@ export const StyledHeader = styled.header`
         padding: 0.8em 1.5em;
     }
 
+    ul li:hover,
+    ul li:focus {
+        text-decoration: underline;
+    }
+
     ul {
         padding: 2em 0;
         left: -100%;

@@ -22,4 +22,9 @@ export const StyledLocationCard = styled.div`
         padding: 1.15em 1.2em;
     }
 
+    button:hover,
+    button:focus {
+        background-color: #FFAD9B;
+        color: #FFFFFF;
+    }
 `

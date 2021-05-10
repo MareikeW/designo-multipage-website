@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/shared/desktop/logo-light.png";
-import { StyledFooter, StyledLogo, HorizontalLine, StyledNavigation, StyledContactInformation } from "./footer-styles.js";
+import { StyledFooter, StyledLogo, HorizontalLine, StyledNavigation, 
+    StyledContactInformation, StyledSocialMediaButtons } from "./footer-styles.js";
 import { ReactComponent as Facebook } from "../../assets/shared/desktop/icon-facebook.svg";
 import { ReactComponent as Youtube } from "../../assets/shared/desktop/icon-youtube.svg";
 import { ReactComponent as Twitter } from "../../assets/shared/desktop/icon-twitter.svg";
@@ -35,13 +36,15 @@ const Footer = ({contactpage}) => {
                     <p>M : contact@designo.co</p>
                 </div>
 
-                <div>
-                    <Facebook />
-                    <Youtube />
-                    <Twitter />
-                    <Pinterest />
-                    <Instagram />
-                </div>
+                <StyledSocialMediaButtons>
+                    <ul>
+                        <li><Facebook /></li>
+                        <li><Youtube /></li>
+                        <li><Twitter /></li>
+                        <li><Pinterest /></li>
+                        <li><Instagram /></li>
+                    </ul>
+                </StyledSocialMediaButtons>
             </StyledContactInformation>     
         </StyledFooter>
     )

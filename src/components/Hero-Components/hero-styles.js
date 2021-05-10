@@ -10,6 +10,7 @@ export const StyledHeroHome = styled.div`
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    margin-bottom: 7em;
 `
 
 export const StyledHeroBackgroundCircle = styled.div`
@@ -44,6 +45,12 @@ export const StyledHeroTextContainer = styled.div`
         color: #333136;
         cursor: pointer;
         margin: 1em;
+    }
+
+    button:hover,
+    button:focus {
+        background-color: #FFAD9B;
+        color: #FFFFFF;
     }
 `
 

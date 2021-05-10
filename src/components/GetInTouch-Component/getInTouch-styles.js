@@ -2,18 +2,20 @@ import styled from "styled-components";
 
 export const ContainerPosition = styled.div`
     position: relative;
-    height: 200px;
+    height: 250px;
 `
 
 export const StyledGetInTouchContainer = styled.div`
-    margin: 1em;
+    max-width: 600px;
     background-color: #E7816B;
     border-radius: 0.5rem;
     color: #FFFFFF;
     text-align: center;
-    padding: 4em 1em;
+    padding: 4em 1.5em;
     position: absolute;
-    top: 20px;
+    top: 100%;
+    left: 50%;
+    transform:translate(-50%, -50%);
 
     h2 {
         font-size: 2rem;
@@ -34,5 +36,11 @@ export const StyledGetInTouchContainer = styled.div`
         border: none;
         padding: 1.15em 1.2em;
         margin: 1em;
+    }
+
+    button:hover,
+    button:focus {
+        background-color: #FFAD9B;
+        color: #FFFFFF;
     }
 `

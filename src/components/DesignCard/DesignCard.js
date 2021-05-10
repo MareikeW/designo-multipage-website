@@ -5,10 +5,12 @@ import { ReactComponent as ArrowRight } from "../../assets/shared/desktop/icon-r
 
 const DesignCard = ({title, linkPath, background}) => {
     return (
-        <StyledDesignCardContainer className="container--dark" background={background}>
-            <h3>{title}</h3>
-            <Link to={linkPath}><button>View Projects <ArrowRight /></button></Link>
-        </StyledDesignCardContainer>
+        <Link to={linkPath}>
+            <StyledDesignCardContainer background={background}>
+                <h3>{title}</h3>
+                <button>View Projects <ArrowRight /></button>
+            </StyledDesignCardContainer>
+        </Link>
     )
 }
 

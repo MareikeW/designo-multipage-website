@@ -33,6 +33,11 @@ export const StyledNavigation = styled.nav`
         letter-spacing: 0.125em;
         padding: 1em;
     }
+
+    ul li:hover,
+    ul li:focus {
+        text-decoration: underline;
+    }
 `
 
 export const StyledContactInformation = styled.div`
@@ -46,18 +51,24 @@ export const StyledContactInformation = styled.div`
     div:nth-of-type(2) {
         margin-top: 2.5em;
     }
+`
 
-    div:last-of-type {
+export const StyledSocialMediaButtons = styled.div`
+    
+    ul {
         margin: 2.5em 0;
-
-        * {
-            margin: 0.5em;
-        }
-
-        *:hover,
-        *:focus {
-            cursor: pointer;
-        }
+        display: flex;
+        lex-direction: row;
+        justify-content: center;
     }
 
+    ul li {
+        margin: 0 0.5em;
+    }
+
+    ul li:hover,
+    ul li:focus {
+        cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(82%) sepia(17%) saturate(2053%) hue-rotate(304deg) brightness(112%) contrast(101%);
+    }
 `

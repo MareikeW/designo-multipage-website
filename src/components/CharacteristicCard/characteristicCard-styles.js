@@ -7,7 +7,7 @@ export const StyledCharacteristicCard = styled.div`
     position: relative;
 
     &:first-of-type {
-        margin-top: 5em;
+        margin-top: 8em;
     }
 
     .circle {

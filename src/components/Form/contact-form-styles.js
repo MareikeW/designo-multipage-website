@@ -31,21 +31,53 @@ export const StyledContactForm = styled.div`
         text-transform: uppercase;
         margin-bottom: 4.5em;   
     } 
+
+    input[type=submit]:hover,
+    input[type=submit]:focus {
+        background-color: #FFAD9B;
+        color: #FFFFFF;
+    }
 `
 
 export const FormInputFields = styled.div`
+    #name-error-text {
+        display: none;
+        position: absolute;
+        right: 3em;
+        top: 1em;
+        font-size: 0.75em;  
+    }
+
+    #name-error-icon {
+        display: none;
+        position: absolute;
+        top: 1em;
+        right: 0.5em;
+    }
+
     input,
     textarea {
         border: none;
-        background: none;
-        border-bottom: 1px solid #FFFFFF;
+        background: none;   
         padding: 1em;
         margin-bottom: 1.5em;
+        outline: none;
+        position: relative;
+    }
+
+    .filledInput {
+        color: #FFFFFF;
+        border-bottom 3px solid #FFFFFF;
+    }
+
+    .emptyInput {
+        border-bottom: 1px solid #FFFFFF;
     }
 
     textarea {
         padding-bottom: 4.75em;
         margin-bottom: 2.5em;
+        border-bottom: 1px solid #FFFFFF;
     }
 
     input::placeholder,
@@ -53,4 +85,10 @@ export const FormInputFields = styled.div`
         color: #FFFFFF;
         opacity: 0.5;
     }
+`
+
+export const StyledInputContainer = styled.div`
+    .input-error {
+        position: relative;
+    } 
 `

@@ -39,11 +39,9 @@ export const StyledDesignCardContainer = styled.div`
         font-size: 1rem;
     }
 
-    &:first-of-type {
-        margin-top: 7em;
-    }
-
-    &:last-of-type {
-        margin-bottom: 8em;
+    button:hover,
+    button:focus {
+        color: #E7816B;
+        text-decoration: underline;
     }
 `
