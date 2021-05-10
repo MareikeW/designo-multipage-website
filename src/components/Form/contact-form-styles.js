@@ -40,16 +40,22 @@ export const StyledContactForm = styled.div`
 `
 
 export const FormInputFields = styled.div`
-    #name-error-text {
-        display: none;
+    .input-error {
+        position: relative;
+    } 
+
+    .name-error-text,
+    .error-text {
+        display: block;
         position: absolute;
         right: 3em;
         top: 1em;
         font-size: 0.75em;  
     }
 
-    #name-error-icon {
-        display: none;
+    .name-error-icon,
+    .error-icon {
+        display: block;
         position: absolute;
         top: 1em;
         right: 0.5em;
@@ -85,10 +91,4 @@ export const FormInputFields = styled.div`
         color: #FFFFFF;
         opacity: 0.5;
     }
-`
-
-export const StyledInputContainer = styled.div`
-    .input-error {
-        position: relative;
-    } 
 `

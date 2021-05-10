@@ -1,23 +1,18 @@
 import React, { useState } from "react";
-import { StyledContactForm, FormInputFields, StyledInputContainer } from "./contact-form-styles";
+import { StyledContactForm, FormInputFields } from "./contact-form-styles";
 import { ReactComponent as ErrorIcon } from "../../assets/contact/desktop/icon-error.svg";
-const ContactForm = () => { 
-    const nameInput = document.getElementById("name");
-    const emailInput = document.getElementById("email");
-    const telInput = document.getElementById("tel");
-    const messageInput = document.getElementById("message");
-    
-    const nameContainer = document.getElementById("name-input-container");
-
-    const nameErrorText = document.getElementById("name-error-text");
-    const nameErrorIcon = document.getElementById("name-error-icon");
-    
+const ContactForm = () => {  
     const [inputText, setInputText] = useState({
         name: "",
         email: "",
         tel: "",
         message: ""
     });
+
+    const [isNameError, setIsNameError] = useState(false);
+    const [isEmailError, setIsEmailError] = useState(false);
+    const [isTelError, setIsTelError] = useState(false);
+    const [isMessageError, setIsMessageError] = useState(false);
 
     /* Changes input colour when it's filled out */
     const handleChange = event => {
@@ -31,15 +26,28 @@ const ContactForm = () => {
         });
     }
 
-
+    /* Displays Error text & Error icon when form was submitted without filling out all inputs */
     const handleSubmit = event => {
         event.preventDefault();
 
-        if (inputText.name === "") {
-            console.log("empty");
-        } else {
-            console.log("not empty")
-        }  
+        inputText.name === "" ? setIsNameError(true) : setIsNameError(false);
+        
+        inputText.email === "" ? setIsEmailError(true) : setIsEmailError(false);
+        
+        inputText.tel === "" ? setIsTelError(true) : setIsTelError(false);
+        
+        inputText.message === "" ? setIsMessageError(true) : setIsMessageError(false);
+
+        if (inputText.name !== "" && inputText.email !== "" && inputText.tel !== "" && inputText.message !== "") {
+            setInputText(
+                {
+                    name: "",
+                    email: "",
+                    tel: "",
+                    message: ""
+                }
+            )
+        }
     }
 
     return (
@@ -53,57 +61,56 @@ const ContactForm = () => {
             
             <form onSubmit={handleSubmit}>
                 <FormInputFields>
-                    <StyledInputContainer id="name-input-container">
+                    <div className="input-error">
                         <input 
                             type="text" 
                             placeholder="Name"
-                            id="name" 
                             name="name" 
                             value={inputText.name} 
                             className={inputText.name ? "filledInput" : "emptyInput"} 
                             onChange={handleChange} 
                         />
-                        <em id="name-error-text">Can't be empty</em>
-                        <ErrorIcon id="name-error-icon" />
-                    </StyledInputContainer>
+                        {isNameError === true ? <em className="error-text">Can't be empty</em> : null}
+                        {isNameError === true ? <ErrorIcon className="error-icon" /> : null}
+                    </div>
 
-                    <StyledInputContainer id="email-input-container">
+                    <div className="input-error">
                         <input 
                             type="email" 
                             placeholder="Email Address"
-                            id="email" 
                             name="email" 
                             value={inputText.email} 
                             className={inputText.email ? "filledInput" : "emptyInput"} 
                             onChange={handleChange} 
                         />
-                        <small id="email-error-text">Can't be empty</small>
-                    </StyledInputContainer>
+                        {isEmailError === true ? <em className="error-text">Can't be empty</em> : null}
+                        {isEmailError === true ? <ErrorIcon className="error-icon" /> : null}
+                    </div>
 
-                    <StyledInputContainer id="tel-input-container">
+                    <div className="input-error">
                         <input 
                             type="tel" 
                             placeholder="Phone" 
-                            id="tel"
                             name="tel" 
                             value={inputText.tel} 
                             className={inputText.tel ? "filledInput" : "emptyInput"} 
                             onChange={handleChange} 
                         />
-                        <small id="tel-error-text">Can't be empty</small>
-                    </StyledInputContainer>
+                        {isTelError === true ? <em className="error-text">Can't be empty</em> : null}
+                        {isTelError === true ? <ErrorIcon className="error-icon" /> : null}
+                    </div>
 
-                    <StyledInputContainer id="message-input-container">
+                    <div className="input-error">
                         <textarea 
                             placeholder="Your Message" 
-                            id="message"
                             name="message" 
                             value={inputText.message} 
                             className={inputText.message ? "filledInput" : "emptyInput"} 
                             onChange={handleChange}
                         />
-                        <small id="message-error-text">Can't be empty</small>
-                    </StyledInputContainer>
+                        {isMessageError === true ? <em className="error-text">Can't be empty</em> : null}
+                        {isMessageError === true ? <ErrorIcon className="error-icon" /> : null}
+                    </div>
                 </FormInputFields>
                 <input type="submit" value="Submit" />
             </form>
