@@ -10,13 +10,12 @@ export const StyledAboutDescriptionCard = styled.div`
         color: #E7816B;
         margin-bottom: 0;
         letter-spacing: 0;
+        padding-top: 2.5em;
     }
 
     p {
         font-size: 1rem;
-        padding: 1.5em;
-        padding-top: 0;
-        padding-bottom: 5em;
+        padding: 1.5em 1.5em 5em 1.5em;
         /* Turns "\n" into new line */
         white-space: pre-line;
     }

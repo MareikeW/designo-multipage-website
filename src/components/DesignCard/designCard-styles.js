@@ -4,7 +4,7 @@ import appDesignBackground from "../../assets/home/mobile/image-app-design.jpg";
 import graphicDesignBackground from "../../assets/home/mobile/image-graphic-design.jpg";
 
 export const StyledDesignCardContainer = styled.div`
-    max-width: 689px;
+    width: 90vw;
     text-align: center;
     color: #FFFFFF;
     border-radius: 1rem;
@@ -13,7 +13,7 @@ export const StyledDesignCardContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: 1em;
+    margin: 1.5em auto;
     background-image: ${({background}) => {
         if (background === "webdesign") return `url(${webDesignBackground})`;
         else if (background === "appdesign") return `url(${appDesignBackground})`;
@@ -22,7 +22,6 @@ export const StyledDesignCardContainer = styled.div`
     background-repeat: no-repeat;
     background-color: black;
     background-size: cover;
- 
 
     h3 {
         font-size: 1.75rem;
@@ -38,5 +37,13 @@ export const StyledDesignCardContainer = styled.div`
         color: #FFFFFF;
         letter-spacing: 0.3rem;
         font-size: 1rem;
+    }
+
+    &:first-of-type {
+        margin-top: 7em;
+    }
+
+    &:last-of-type {
+        margin-bottom: 8em;
     }
 `

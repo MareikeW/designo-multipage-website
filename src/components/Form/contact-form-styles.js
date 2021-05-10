@@ -14,6 +14,8 @@ export const StyledContactForm = styled.div`
 
     p {
         font-size: 1rem;
+        padding-top: 1.5em;
+        padding-bottom: 3em;
     }
 
     form div {

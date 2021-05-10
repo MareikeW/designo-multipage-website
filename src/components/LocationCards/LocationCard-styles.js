@@ -9,6 +9,11 @@ export const StyledLocationCard = styled.div`
         position: absolute;
     }
 
+    h3 {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
     button {
         background-color: #E7816B;
         border-radius: 0.5em;

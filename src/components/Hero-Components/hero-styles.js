@@ -73,7 +73,7 @@ export const StyledDesignPageHero = styled.div`
 
     h1 {
         font-size: 2rem;
-        margin-bottom: 0;
+        margin-bottom: 0.6em;
     }
 
     p {
@@ -96,8 +96,7 @@ export const StyledHeroAbout = styled.div`
     }
 
     p {
-        padding: 0 1em;
-        padding-bottom: 4.65em;
+        padding: 1.5em 1em 5em 1em;
         margin-bottom: 0;
     }
 

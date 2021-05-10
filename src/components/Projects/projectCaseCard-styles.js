@@ -28,10 +28,11 @@ export const StyledProjectCaseCard = styled.div`
     h3 {
         color: #E7816B;
         margin-bottom: 0;
+        margin-top: 2em;
     }
 
     p {
-        padding: 0 2em 2em 2em;
+        padding: 1em 2em 2em 2em;
     }
 `
 
@@ -59,7 +60,7 @@ export const StyledProjectImage = styled.div`
     height: 320px;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 `

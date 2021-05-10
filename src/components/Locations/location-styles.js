@@ -19,11 +19,11 @@ export const StyledLocationInfoCard = styled.div`
     h2 {
         margin: 0;
         color: #E7816B;
-        padding-top: 1.2em;
+        padding-top: 5rem;
     }
 
     p {
-        line-height: 1rem;
+        line-height: 1.56rem;
     }
 
     div {
@@ -32,6 +32,6 @@ export const StyledLocationInfoCard = styled.div`
 
     div:last-of-type {
         margin-top: 3em;
-        padding-bottom: 2.5em;
+        padding-bottom: 5rem;
     }
 `
