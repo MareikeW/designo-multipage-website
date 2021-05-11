@@ -1,11 +1,13 @@
 import React from "react";
 import heroAboutImage from "../../assets/about/mobile/image-about-hero.jpg";
+import heroAboutImageTablet from "../../assets/about/tablet/image-about-hero.jpg";
 import { StyledHeroAbout } from "./hero-styles";
 
 const HeroAbout = () => {
     return (
         <StyledHeroAbout>
-            <img src={heroAboutImage} alt="Bird angle of office table where people with laptops are sitting at." />
+            <img src={heroAboutImage} className="mobileImage" alt="Bird angle of office table where people with laptops are sitting at." />
+            <img src={heroAboutImageTablet} className="tabletImage" alt="Bird angle of office table where people with laptops are sitting at." />
             <div>
                 <h1>About Us</h1>
                 <p>Founded in 2010, we are a creative agency that produces lasting results for our clients. 

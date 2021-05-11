@@ -34,6 +34,19 @@ export const StyledProjectCaseCard = styled.div`
     p {
         padding: 1em 2em 2em 2em;
     }
+
+    @media (min-width: 625px) {
+        display: flex;
+        max-width: 625px;
+        margin: 2em auto;
+
+        div {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+        }
+    }
 `
 
 export const StyledProjectImage = styled.div`
@@ -63,5 +76,11 @@ export const StyledProjectImage = styled.div`
     background-position: top;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+
+    @media (min-width: 625px) {
+        width: 50%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1em;
+    }
 `
 

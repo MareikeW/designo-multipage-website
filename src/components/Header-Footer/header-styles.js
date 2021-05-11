@@ -24,8 +24,10 @@ export const StyledHeader = styled.header`
         background: #000000;
         position: absolute;
         top: 96px;
-        left: 0;
         z-index: 40;
+        padding: 2em 0;
+        left: -100%;
+        transition: all 0.8s;
     }
 
     ul li {
@@ -40,14 +42,36 @@ export const StyledHeader = styled.header`
         text-decoration: underline;
     }
 
-    ul {
-        padding: 2em 0;
-        left: -100%;
-        transition: all 0.8s;
-    }
-
     #check:checked ~ ul {
         left: 0;
+    }
+
+    @media (min-width: 724px) {
+        height: 155px;
+
+        .checkButton {
+            display: none;
+        }
+
+        ul {
+            width: 370px;
+            background: #FFFFFF;
+            position: static;
+            display: flex;
+            padding: 2em 0;
+            transition: none;
+            justify-content: space-between;
+        }
+    
+        ul li {
+            color: #000000;
+            font-size: 1em;
+            padding: 0.8em 1em;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        padding: 0 10em;
     }
 `
 

@@ -37,6 +37,25 @@ export const StyledContactForm = styled.div`
         background-color: #FFAD9B;
         color: #FFFFFF;
     }
+
+    @media (min-width: 724px) {
+        border-radius: 1rem;
+        width: 689px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 4.437em 3.625em 8.8em 3.625em;
+
+        h1 {
+            padding: 0;
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+
+        input[type=submit] {
+            margin: 0;
+            float: right;
+        }
+    }
 `
 
 export const FormInputFields = styled.div`

@@ -20,8 +20,38 @@ export const StyledAboutDescriptionCard = styled.div`
         white-space: pre-line;
     }
     
-    img {
+    .mobileVersion {
         max-height: 320px; 
         max-width: 100%;
+    }
+
+    .tabletVersion {
+        display: none;
+    }
+
+    @media (min-width: 724px) {
+        width: 689px;
+        border-radius: 1rem;
+        margin-top: 7.5em;
+
+        h2 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            padding-top: 4.5rem;
+        }
+
+        p {
+            padding: 1.5rem 3.5rem 4rem 3.5rem;          
+        }
+
+        .mobileVersion {
+            display: none;
+        }
+
+        .tabletVersion {
+            display: block;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
     }
 `

@@ -5,8 +5,13 @@ export const StyledMap = styled.div`
     text-align: center;
 
     img {
-        max-width: 100%;
-        
+        max-width: 100%;  
+    }
+
+    @media (min-width: 724px) {
+        img {
+            border-radius: 1rem;
+        }
     }
 `
 
@@ -33,5 +38,37 @@ export const StyledLocationInfoCard = styled.div`
     div:last-of-type {
         margin-top: 3em;
         padding-bottom: 5rem;
+    }
+
+    @media (min-width: 724px) {
+        width: 689px;
+        margin: 0 auto;
+        border-radius: 1rem;
+        margin-top: 1.9em;
+        margin-bottom: 7.5em;
+        position: relative;
+        height: 326px;
+        text-align: left;
+
+        h2 {
+            position: absolute;
+            top: 5.5rem;
+            left: 4.69rem;
+            padding: 0;
+        } 
+
+        div:first-of-type {
+            position: absolute;
+            left: 4.69em;
+            bottom: 5.5rem;
+            margin: 0;
+        }
+
+        div:last-of-type {
+            position: absolute;
+            left: 22.5em;
+            top: 10em;
+            margin: 0;
+        }
     }
 `

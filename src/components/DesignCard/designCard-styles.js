@@ -13,6 +13,10 @@ export const StyledContainer = styled.div`
     width: 90vw;
     height: 15.6em;
     margin: 1.5em auto;
+
+    @media (min-width: 625px) {
+        max-width: 625px;
+    }
 `
 
 export const StyledDesignCardContainer = styled.div`
@@ -33,7 +37,8 @@ export const StyledDesignCardContainer = styled.div`
     z-index: 5;
     position: absolute;
 
-    @media (min-width: 600px) {
+    @media (min-width: 625px) {
+        max-width: 625px;
         background-image: ${({background}) => {
             if (background === "webdesign") return `url(${webDesignTablet})`;
             else if (background === "appdesign") return `url(${appDesignTablet})`;
@@ -55,8 +60,7 @@ export const StyledText = styled.div`
 
     &:hover,
     &:focus {
-        background-color: #E7816B;
-        opacity: 0.5;
+        background-color: rgba(231, 129, 107, 0.5);
     }
 
     h3 {
@@ -75,5 +79,15 @@ export const StyledText = styled.div`
         color: #FFFFFF;
         letter-spacing: 0.3rem;
         font-size: 1rem;
+    }
+
+    @media (min-width: 625px) {
+        max-width: 625px;
+
+        h3 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            letter-spacing: 0.125rem;
+        }
     }
 `

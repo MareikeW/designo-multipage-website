@@ -12,10 +12,27 @@ export const StyledFooter = styled.footer`
     }}
 `
 
+export const StyledNonMobileContainer = styled.div`
+    @media (min-width: 724px) {
+        width: 90vw;
+        margin: 0 auto;
+        margin-bottom: 5em;
+        height: 11em;
+        position: relative;
+    }
+`
+
 export const StyledLogo = styled.div`
     img {
-        width: 202px;
-        
+        width: 202px; 
+    }
+
+    @media (min-width: 724px) {
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 `
 export const HorizontalLine = styled.div`
@@ -38,6 +55,22 @@ export const StyledNavigation = styled.nav`
     ul li:focus {
         text-decoration: underline;
     }
+
+    @media (min-width: 724px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        ul {
+            display: flex;
+            width: 370px;
+            justify-content: space-between;
+        }
+
+        ul li {
+            padding: 0;
+        }
+    }
 `
 
 export const StyledContactInformation = styled.div`
@@ -50,6 +83,20 @@ export const StyledContactInformation = styled.div`
 
     div:nth-of-type(2) {
         margin-top: 2.5em;
+    }
+
+    @media (min-width: 724px) {
+        position: absolute;
+        bottom: 0;
+        text-align: left;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+        div:first-of-type,
+        div:nth-of-type(2) {
+            margin: 0;
+        }
     }
 `
 
@@ -70,5 +117,12 @@ export const StyledSocialMediaButtons = styled.div`
     ul li:focus {
         cursor: pointer;
         filter: brightness(0) saturate(100%) invert(82%) sepia(17%) saturate(2053%) hue-rotate(304deg) brightness(112%) contrast(101%);
+    }
+
+    @media (min-width: 724px) {
+        ul {
+            margin-bottom: 0;
+            margin-top: 3em;
+        }
     }
 `
