@@ -5,6 +5,7 @@ import DesignCard from "../components/DesignCard/DesignCard";
 import CharacteristicCard from "../components/CharacteristicCard/CharacteristicCard";
 import GetInTouchComponent from "../components/GetInTouch-Component/GetInTouchComponent";
 import Footer from "../components/Header-Footer/Footer";
+import { StyledDesignCardsHomeContainer } from "../components/DesignCard/designCard-styles";
 
 const Home = () => {
     return (
@@ -13,25 +14,28 @@ const Home = () => {
   
             <HeroHome />
 
-            <div>
+            <StyledDesignCardsHomeContainer>
                 <DesignCard 
                     title="Web Design" 
                     linkPath="/webdesign" 
-                    background="webdesign" 
+                    background="webdesign"
+                    specialHomeDesktopVersion="webdesignDesktop"
                 />
 
                 <DesignCard 
                     title="App Design" 
                     linkPath="/appdesign" 
-                    background="appdesign" 
+                    background="appdesign"
+                    specialHomeDesktopVersion="appdesignDesktop" 
                 />
 
                 <DesignCard 
                     title="Graphic Design" 
                     linkPath="/graphicdesign" 
-                    background="graphicdesign" 
+                    background="graphicdesign"
+                    specialHomeDesktopVersion="graphicdesignDesktop" 
                 />
-            </div>
+            </StyledDesignCardsHomeContainer>
   
             <div>
                 <CharacteristicCard 
