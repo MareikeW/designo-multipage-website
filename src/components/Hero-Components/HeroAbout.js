@@ -1,6 +1,7 @@
 import React from "react";
 import heroAboutImage from "../../assets/about/mobile/image-about-hero.jpg";
 import heroAboutImageTablet from "../../assets/about/tablet/image-about-hero.jpg";
+import heroAboutImageDesktop from "../../assets/about/desktop/image-about-hero.jpg";
 import { StyledHeroAbout } from "./hero-styles";
 
 const HeroAbout = () => {
@@ -8,6 +9,7 @@ const HeroAbout = () => {
         <StyledHeroAbout>
             <img src={heroAboutImage} className="mobileImage" alt="Bird angle of office table where people with laptops are sitting at." />
             <img src={heroAboutImageTablet} className="tabletImage" alt="Bird angle of office table where people with laptops are sitting at." />
+            <img src={heroAboutImageDesktop} className="desktopImage" alt="Bird angle of office table where people with laptops are sitting at." />
             <div>
                 <h1>About Us</h1>
                 <p>Founded in 2010, we are a creative agency that produces lasting results for our clients. 

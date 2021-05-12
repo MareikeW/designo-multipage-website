@@ -22,8 +22,8 @@ export const StyledContainer = styled.div`
         max-width: 625px;
     }
 
-    @media (min-width: 1024px) {
-        width: 541px;
+    @media (min-width: 1140px) {
+        max-width: 541px;
 
         position: ${({height}) => {
             if (height) return "absolute";
@@ -71,8 +71,8 @@ export const StyledDesignCardContainer = styled.div`
         }};
     }
 
-    @media (min-width: 1024px) {
-        width: 541px;
+    @media (min-width: 1140px) {
+        max-width: 541px;
         height: 308px;
         height: ${({height}) => {
             if (height === "webdesignDesktop") return "640px";
@@ -129,8 +129,8 @@ export const StyledText = styled.div`
         }
     }
 
-    @media (min-width: 1024px) {
-        width: 541px;
+    @media (min-width: 1140px) {
+        max-width: 541px;
         height: 308px;
 
         height: ${({height}) => {
@@ -140,10 +140,20 @@ export const StyledText = styled.div`
 `
 
 export const StyledDesignCardsHomeContainer = styled.div`
-    @media (min-width: 1024px) {
+    @media (min-width: 1140px) {
         position: relative;
         height: 640px;
         width: 1112px;
         margin: 0 auto;
+    }
+`
+
+export const StyledDesignCardsPageContainer = styled.div`
+    @media (min-width: 1140px) {
+        max-width: 1150px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10em;
     }
 `

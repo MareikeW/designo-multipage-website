@@ -6,6 +6,7 @@ import CharacteristicCard from "../components/CharacteristicCard/CharacteristicC
 import GetInTouchComponent from "../components/GetInTouch-Component/GetInTouchComponent";
 import Footer from "../components/Header-Footer/Footer";
 import { StyledDesignCardsHomeContainer } from "../components/DesignCard/designCard-styles";
+import { StyledCharacteristicHomeContainer } from "../components/CharacteristicCard/characteristicCard-styles";
 
 const Home = () => {
     return (
@@ -37,7 +38,7 @@ const Home = () => {
                 />
             </StyledDesignCardsHomeContainer>
   
-            <div>
+            <StyledCharacteristicHomeContainer>
                 <CharacteristicCard 
                     characteristic="Passionate" 
                     description="Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
@@ -58,7 +59,7 @@ const Home = () => {
                 strive to give them the best experience a company can provide."
                     svgName="friendly"
                 />
-            </div>
+            </StyledCharacteristicHomeContainer>
 
             <GetInTouchComponent />
 

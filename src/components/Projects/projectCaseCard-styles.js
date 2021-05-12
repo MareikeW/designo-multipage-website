@@ -47,6 +47,16 @@ export const StyledProjectCaseCard = styled.div`
             justify-content: center; 
         }
     }
+
+    @media (min-width: 1100px) {
+        width: 350px;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        div {
+            width: 100%;
+        }
+    }
 `
 
 export const StyledProjectImage = styled.div`
@@ -81,6 +91,21 @@ export const StyledProjectImage = styled.div`
         width: 50%;
         border-top-right-radius: 0;
         border-bottom-left-radius: 1em;
+    }
+
+    @media (min-width: 1100px) {
+        border-top-right-radius: 1em;
+        border-bottom-left-radius: 0em;
+    }
+`
+
+export const StyledProjectCardsContainer = styled.div`
+    @media (min-width: 1100px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1111px;
+        margin-bottom: 8em;
     }
 `
 

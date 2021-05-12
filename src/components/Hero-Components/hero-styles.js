@@ -18,9 +18,14 @@ export const StyledHeroHome = styled.div`
     }
 
     @media (min-width: 1024px) {
-        max-width: 1111px;
+        max-width: 1000px;
         max-height: 640px;
         text-align: left;
+        
+    }
+
+    @media (min-width: 1140px) {
+        max-width: 1111px;
     }
 `
 
@@ -136,6 +141,12 @@ export const StyledHeroPhoneImage = styled.div`
         img {
             top: 0;
             left: 0;
+            transform: translate(80%, -58%)
+        }
+    }
+
+    @media (min-width: 1140px) {
+        img {
             transform: translate(90%, -58%)
         }
     }
@@ -179,6 +190,22 @@ export const StyledDesignPageHero = styled.div`
             padding: 0 8em;
         }
     }
+
+    @media (min-width: 1024px) {
+        max-width: 900px;
+        
+        p {
+            padding: 0 15em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1111px;
+        
+        p {
+            padding: 0 21em;
+        }
+    }
 `
 
 /* ABOUT PAGE */
@@ -208,6 +235,10 @@ export const StyledHeroAbout = styled.div`
         display: none;
     }
 
+    .desktopImage {
+        display: none;
+    }
+
     @media (min-width: 724px) {
         width: 689px;
         border-radius: 1rem;
@@ -231,6 +262,37 @@ export const StyledHeroAbout = styled.div`
 
         p { 
             padding: 2em 4em 4em 4em;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        width: 1111px;
+        height: 480px;
+
+        .tabletImage {
+            display: none;
+        }
+
+        .desktopImage {
+            display: block;
+            float: right;
+            border-bottom-right-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        div {
+            text-align: left;
+            padding: 8em 5em;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            padding: 0;
+            padding-top: 2em;
+            width: 458px;
         }
     }
 `

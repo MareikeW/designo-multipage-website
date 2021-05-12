@@ -6,7 +6,6 @@ export const ContainerPosition = styled.div`
 `
 
 export const StyledGetInTouchContainer = styled.div`
-    max-width: 600px;
     background-color: #E7816B;
     border-radius: 0.5rem;
     color: #FFFFFF;
@@ -57,6 +56,25 @@ export const StyledGetInTouchContainer = styled.div`
             line-height: 1.63rem;
             margin-top: 3.5em;
             padding: 0 3em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        width: 1110px;
+
+        div {
+            max-width: 459px;
+            text-align: left;
+            margin-left: 6em;
+        }
+
+        p {
+            padding: 0;
+        }
+        
+        button {
+            margin: 7.375em 0 7.375em 17em;
         }
     }
 `
