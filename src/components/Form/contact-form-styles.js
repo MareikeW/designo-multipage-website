@@ -56,6 +56,26 @@ export const StyledContactForm = styled.div`
             float: right;
         }
     }
+
+    @media (min-width: 1024px) {
+        display: flex;
+        width: 800px;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 4.437em;
+
+        div {
+            width: 300px;
+        }
+    }
+
+    @media (min-width: 1150px) {
+        width: 1110px;
+
+        div {
+            width: 445px;
+        }
+    }
 `
 
 export const FormInputFields = styled.div`

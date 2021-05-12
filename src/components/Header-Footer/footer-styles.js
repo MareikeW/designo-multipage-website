@@ -20,6 +20,10 @@ export const StyledNonMobileContainer = styled.div`
         height: 11em;
         position: relative;
     }
+
+    @media (min-width: 1024px) {
+        width: 80vw;
+    }
 `
 
 export const StyledLogo = styled.div`
@@ -98,7 +102,15 @@ export const StyledContactInformation = styled.div`
             margin: 0;
         }
     }
+
+    @media (min-width: 1024px) {
+        div:nth-of-type(2) {
+            position: absolute;
+            left: 360px;
+        }
+    }
 `
+
 
 export const StyledSocialMediaButtons = styled.div`
     

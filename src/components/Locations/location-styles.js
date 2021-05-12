@@ -8,9 +8,28 @@ export const StyledMap = styled.div`
         max-width: 100%;  
     }
 
+    .imageMobileTablet {
+        display: block;
+    }
+
+    .imageDesktop {
+        display: none;
+    }
+
     @media (min-width: 724px) {
         img {
             border-radius: 1rem;
+            margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 1150px) {
+        .imageMobileTablet {
+            display: none;
+        }
+
+        .imageDesktop {
+            display: block;
         }
     }
 `
@@ -70,5 +89,39 @@ export const StyledLocationInfoCard = styled.div`
             top: 10em;
             margin: 0;
         }
+    }
+
+    @media (min-width: 1150px) {
+        width: 730px;
+        height: 299px;
+        margin: 0;
+
+        h2 {
+            top: 5.5rem;
+            left: 5.9rem;
+            padding: 0;
+        } 
+
+        div:first-of-type {
+            left: 5.9em;
+            bottom: 5.5rem;
+            margin: 0;
+        }
+
+        div:last-of-type {
+            left: 23.75em;
+            top: 8.5em;
+            margin: 0;
+        }
+`
+
+export const StyledLocationsContainer = styled.div`
+    @media (min-width: 1150px) {
+        max-width: 1110px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin: 0 auto;
     }
 `
