@@ -1,9 +1,10 @@
 import React from "react";
 import LocationCard from "./LocationCard";
+import { StyledLocationCards } from "./LocationCard-styles";
 
 const LocationCards = () => {
     return (
-        <div>
+        <StyledLocationCards>
             <LocationCard 
                 title="Canada" 
             />
@@ -13,7 +14,7 @@ const LocationCards = () => {
             <LocationCard 
                 title="United Kingdom"
             />
-        </div>
+        </StyledLocationCards>
     )
 }
 

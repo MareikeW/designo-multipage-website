@@ -29,6 +29,10 @@ export const StyledAboutDescriptionCard = styled.div`
         display: none;
     }
 
+    .desktopVersion {
+        display: none;
+    }
+
     @media (min-width: 724px) {
         width: 689px;
         border-radius: 1rem;
@@ -53,5 +57,51 @@ export const StyledAboutDescriptionCard = styled.div`
             border-top-left-radius: 1rem;
             border-top-right-radius: 1rem;
         }
+    }
+
+    @media (min-width: 1150px) {
+        display: flex;
+        width: 1111px;
+        text-align: left;
+        height: 640px;
+
+        h2 {
+            padding: 0;
+        }
+
+        p {
+            padding: 0;
+        }
+
+        div {
+            width: 445px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 5.9em;
+        }
+
+        .tabletVersion {
+            display: none;
+        }
+
+        .desktopVersion {
+            display: block;
+            border-top-left-radius: ${({desktopImage}) => {
+                if (desktopImage === "talent") return "1em";
+            }};
+            border-bottom-left-radius: ${({desktopImage}) => {
+                if (desktopImage === "talent") return "1em";
+            }};
+            border-top-right-radius: ${({desktopImage}) => {
+                if (desktopImage === "deal") return "1em";
+            }};
+            border-bottom-right-radius: ${({desktopImage}) => {
+                if (desktopImage === "deal") return "1em";
+            }};
+            float: ${({desktopImage}) => {
+                if (desktopImage === "deal") return "right";
+            }};
+        }      
     }
 `

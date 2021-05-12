@@ -27,4 +27,17 @@ export const StyledLocationCard = styled.div`
         background-color: #FFAD9B;
         color: #FFFFFF;
     }
+
+    @media (min-width: 1024px) {
+        margin: 0 auto;
+    }
+`
+
+export const StyledLocationCards  = styled.div`
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;   
+        margin-top: 10em;
+        margin-bottom: 10em;
+    }
 `
