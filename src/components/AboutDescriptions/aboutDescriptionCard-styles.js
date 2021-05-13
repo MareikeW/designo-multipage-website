@@ -64,6 +64,9 @@ export const StyledAboutDescriptionCard = styled.div`
         width: 1111px;
         text-align: left;
         height: 640px;
+        flex-direction: ${({desktopImage}) => {
+            if (desktopImage === "deal") return "row-reverse";
+        }};
 
         h2 {
             padding: 0;
@@ -78,7 +81,12 @@ export const StyledAboutDescriptionCard = styled.div`
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin-left: 5.9em;
+            margin-left: ${({desktopImage}) => {
+                if (desktopImage === "talent") return "5.9em";
+            }};
+            margin-right: ${({desktopImage}) => {
+                if (desktopImage === "deal") return "5.9em";
+            }};
         }
 
         .tabletVersion {
@@ -98,9 +106,6 @@ export const StyledAboutDescriptionCard = styled.div`
             }};
             border-bottom-right-radius: ${({desktopImage}) => {
                 if (desktopImage === "deal") return "1em";
-            }};
-            float: ${({desktopImage}) => {
-                if (desktopImage === "deal") return "right";
             }};
         }      
     }

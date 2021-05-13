@@ -15,7 +15,6 @@ const Locations = () => {
                 <MapComponent 
                     imageSource="../assets/locations/tablet/image-map-canada.png" 
                     imageAlt="Map of Toronto."
-                    countryMap="Canada"
                 />
                 <LocationInformationCard 
                     country="Canada" 
@@ -30,7 +29,6 @@ const Locations = () => {
                 <MapComponent 
                     imageSource="../assets/locations/tablet/image-map-australia.png" 
                     imageAlt="Map of New South Wales."
-                    countryMap="Australia"
                 />
                 <LocationInformationCard 
                     country="Australia" 
@@ -45,7 +43,6 @@ const Locations = () => {
                 <MapComponent 
                     imageSource="../assets/locations/tablet/image-map-uk.png" 
                     imageAlt="Map of Rhyd-y-fro."
-                    countryMap="United Kingdom"
                 />
                 <LocationInformationCard
                     country="United Kingdom" 

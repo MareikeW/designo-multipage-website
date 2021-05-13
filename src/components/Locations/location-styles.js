@@ -118,10 +118,10 @@ export const StyledLocationInfoCard = styled.div`
 export const StyledLocationsContainer = styled.div`
     @media (min-width: 1150px) {
         max-width: 1110px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 30px;
         grid-row-gap: 30px;
-        margin: 0 auto;
+        grid-column-gap: 30px;
     }
 `

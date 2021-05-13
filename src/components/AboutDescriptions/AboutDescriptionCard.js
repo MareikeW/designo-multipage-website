@@ -24,10 +24,10 @@ const AboutDescriptionCard = ({imageAlt, title, description, specialDesktopVersi
     }
         
     return (
-        <StyledAboutDescriptionCard>
+        <StyledAboutDescriptionCard desktopImage={specialDesktopVersion}>
             <img src={imageSourceMobile} className="mobileVersion" alt={imageAlt} />
             <img src={imageSourceTablet} className="tabletVersion" alt={imageAlt} />
-            <img desktopImage={specialDesktopVersion} src={imageSourceDesktop} className="desktopVersion" alt={imageAlt} />
+            <img src={imageSourceDesktop} className="desktopVersion" alt={imageAlt} />
             <div>
                 <h2>{title}</h2>
                 <p>{description}</p>
