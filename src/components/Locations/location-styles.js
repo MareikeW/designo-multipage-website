@@ -30,6 +30,8 @@ export const StyledMap = styled.div`
 
         .imageDesktop {
             display: block;
+            height: 326px;
+            width: 350px;
         }
     }
 `
@@ -93,7 +95,7 @@ export const StyledLocationInfoCard = styled.div`
 
     @media (min-width: 1150px) {
         width: 730px;
-        height: 299px;
+        height: 326px;
         margin: 0;
 
         h2 {
@@ -110,7 +112,7 @@ export const StyledLocationInfoCard = styled.div`
 
         div:last-of-type {
             left: 23.75em;
-            top: 8.5em;
+            bottom: 5.5em;
             margin: 0;
         }
 `
@@ -119,9 +121,50 @@ export const StyledLocationsContainer = styled.div`
     @media (min-width: 1150px) {
         max-width: 1110px;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 30px;
-        grid-column-gap: 30px;
+        position: relative;
+        height: 1042px;
+    }
+`
+
+export const StyledMapComponent = styled.div`
+    @media (min-width: 1150px) {
+        position: absolute;
+        
+        &:first-of-type {
+            right: 0;
+            top: 0;
+        }
+
+        &:nth-of-type(3) {
+            
+            left: 0;
+            top: 358px;
+        }
+
+        &:nth-of-type(5) {
+            right: 0;
+            bottom: 0;
+        }
+    }
+`
+
+export const StyledLocationInformationComponent = styled.div`
+    @media (min-width: 1150px) {
+        position: absolute;
+        
+        &:first-of-type {
+            left: 0;
+            top: 0;
+        }
+
+        &:nth-of-type(2) {
+            right: 0;
+            top: 358px;
+        }
+
+        &:last-of-type {
+            left: 0;
+            bottom: 0;
+        }
     }
 `
