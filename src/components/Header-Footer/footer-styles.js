@@ -44,6 +44,11 @@ export const HorizontalLine = styled.div`
     width: 90%;
     margin: 1em auto;
     opacity: 0.1;
+
+    @media (min-width: 724px) {
+        margin-top: 4em;
+        width: 100%;
+    }
 `
 
 export const StyledNavigation = styled.nav`
